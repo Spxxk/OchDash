@@ -1,0 +1,9 @@
+#restaurant-info img {
+    border: 5px solid #f8c291;
+}
+
+#menu li {
+    background-color: #f8c291;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}

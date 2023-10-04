@@ -1,0 +1,32 @@
+#restaurant-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#restaurant-info img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+#menu {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#menu li:last-child {
+    border-bottom: none;
+}

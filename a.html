@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Och Dash</title>
+</head>
+<body>
+    <header>
+        <button id="menu-toggle">&#9776;</button>
+        
+        <div id="side-menu" class="hidden">
+            <a href="#">Profile</a>
+            <a href="#">Orders</a>
+            <a href="#">Settings</a>
+        </div>
+        <div id="logo">
+            <img src="Images\ochdashlogo.png" alt="Logo">
+        </div>
+
+        <div id="delivery-option">
+            <select id="delivery-pickup-select">
+                <option value="delivery">Delivery</option>
+                <option value="pickup">Pickup</option>
+            </select>
+        </div>
+    
+        <div id="address-selection">
+            <input type="text" id="address-input" placeholder="Enter Address...">
+        </div>
+    
+        <div id="search">
+            <input type="text" placeholder="Search for restaurants...">
+        </div>
+    
+        <div id="notifications">
+            <img src="Images\Noti.png" alt="Notifications">
+        </div>
+    
+        <div id="cart">
+            <img src="Images\cart.png" alt="Cart">
+        </div>
+    </header>
+    <div id="category-carousel">
+        <button class="carousel-btn" id="prev-btn">&#10094;</button> 
+        
+        <div class="carousel-container">
+            <div class="carousel-content">
+                <div class="carousel-item">Offers</div>
+                <div class="carousel-item">Grocery</div>
+                <div class="carousel-item">Convenience</div>
+            </div>
+        </div>
+        <button class="carousel-btn" id="next-btn">&#10095;</button>
+    </div>
+    
+    <main>
+        <section id="featured-restaurants">
+            <h2>Featured Restaurants</h2>
+    
+            <a href="cameron.html" class="restaurant-link">
+                <div class="restaurant">
+                    <img src="Images\Cameron.png" alt="Restaurant 1">
+                    <h3>The Cameron Café</h3>
+                    <p>Delicious dishes just for you</p>
+                </div>
+            </a>
+    
+            <a href="ethan.html" class="restaurant-link">
+                <div class="restaurant">
+                    <img src="Images\Ethan.png" alt="Restaurant 2">
+                    <h3>Ethan's Eats</h3>
+                    <p>Exquisite flavors, always fresh</p>
+                </div>
+            </a>
+    
+            <a href="zephyr.html" class="restaurant-link">
+                <div class="restaurant">
+                    <img src="Images\Zephyr.png" alt="Restaurant 3">
+                    <h3>Zephyr's Dogs</h3>
+                    <p>Long and meaty like the dog himself</p>
+                </div>
+            </a>
+        </section>
+    
+        <section id="categories">
+            <h2>Categories</h2>
+    
+            <a href="pizza-category.html" class="category-link">
+                <div class="category">
+                    <img src="Images\Pizza.png" alt="Pizza Category">
+                    <h3>Pizza</h3>
+                </div>
+            </a>
+    
+            <a href="sushi-category.html" class="category-link">
+                <div class="category">
+                    <img src="Images\Sushi.png" alt="Sushi Category">
+                    <h3>Sushi</h3>
+                </div>
+            </a>
+        </section>
+    </main>    
+    <footer>
+        <footer>
+            <div id="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div id="social-media">
+                <h4>Follow Us</h4>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook Icon"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram Icon"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter Icon"></a>
+            </div>
+        </footer>        
+    </footer>
+</body>
+</html>
