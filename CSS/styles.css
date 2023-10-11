@@ -140,8 +140,9 @@ h2 {
 #featured-restaurants,
 #categories {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .restaurant,
