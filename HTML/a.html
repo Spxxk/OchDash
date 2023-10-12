@@ -7,14 +7,29 @@
     <title>Och Dash</title>
 </head>
 <body>
-    <header>
-        <button id="menu-toggle">&#9776;</button>
-        
-        <div id="side-menu" class="hidden">
-            <a href="#">Profile</a>
-            <a href="#">Orders</a>
-            <a href="#">Settings</a>
-        </div>
+     <header>
+        <input type="checkbox" id="menu-toggle" aria-label="Open Menu">
+    <label for="menu-toggle" class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav id="side-menu">
+        <label for="menu-toggle" class="close-btn">×</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pickup</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Saved Stores</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Gift Card</a></li>
+            <li><a href="#">Manage OchPass</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sign Out</a></li>
+        </ul>
+    </nav>
         <div id="logo">
             <img src="/Images/ochdashlogo.png" alt="Logo">
         </div>
@@ -62,48 +77,55 @@
     <main>
         <section id="featured-restaurants">
             <h2>Featured Restaurants</h2>
-    
-            <a href="/HTML/cameron.html" class="restaurant-link">
-                <div class="restaurant">
-                    <img src="/Images/Cameron.png" alt="Restaurant 1">
-                    <h3>The Cameron Café</h3>
-                    <p>Delicious dishes just for you</p>
-                </div>
-            </a>
-    
-            <a href="/HTML/ethan.html" class="restaurant-link">
-                <div class="restaurant">
-                    <img src="/Images/Ethan.png" alt="Restaurant 2">
-                    <h3>Ethan's Eats</h3>
-                    <p>Exquisite flavors, always fresh</p>
-                </div>
-            </a>
-    
-            <a href="/HTML/zephyr.html" class="restaurant-link">
-                <div class="restaurant">
-                    <img src="/Images/Zephyr.png" alt="Restaurant 3">
-                    <h3>Zephyr's Dogs</h3>
-                    <p>Long and meaty like the dog himself</p>
-                </div>
-            </a>
+            
+            <div class="featured-restaurants">
+                <a href="/HTML/Cinnabon.html" class="restaurant-link">
+                    <div class="restaurant">
+                        <img src="/Images/Cinnabon1.png" alt="Restaurant 1">
+                        <h3>Cinnabon</h3>
+                        <p>Sponsored • 2.7 mi • 37 min</p>
+                        <p>4.8⭐ (224) • CA$0 delivery fee over CA$15</p>
+                    </div>
+                </a>
+        
+                <a href="/HTML/Chick-fil-A.html" class="restaurant-link">
+                    <div class="restaurant">
+                        <img src="/Images/Chick-fil-A1.png" alt="Restaurant 2">
+                        <h3>Chick-fil-A</h3>
+                        <p>4.6 mi • 48 min • CA$​0 delivery fee over CA$15</p>
+                        <p>4.3⭐ (17,200+)</p>
+                    </div>
+                </a>
+        
+                <a href="/HTML/Jollibee.html" class="restaurant-link">
+                    <div class="restaurant">
+                        <img src="/Images/Jollibee1.png" alt="Restaurant 3">
+                        <h3>Jollibee</h3>
+                        <p>1.6 mi • 24 min • CA$​0 delivery fee over CA$15</p>
+                        <p>4.7⭐ (5,300+)</p>
+                    </div>
+                </a>
+            </div>
         </section>
     
         <section id="categories">
             <h2>Categories</h2>
     
-            <a href="pizza-category.html" class="category-link">
-                <div class="category">
-                    <img src="/Images/Pizza.png" alt="Pizza Category">
-                    <h3>Pizza</h3>
-                </div>
-            </a>
-    
-            <a href="sushi-category.html" class="category-link">
-                <div class="category">
-                    <img src="/Images/Sushi.png" alt="Sushi Category">
-                    <h3>Sushi</h3>
-                </div>
-            </a>
+            <div class="categories">
+                <a href="pizza-category.html" class="category-link">
+                    <div class="category">
+                        <img src="/Images/Pizza.png" alt="Pizza Category">
+                        <h3>Pizza</h3>
+                    </div>
+                </a>
+        
+                <a href="sushi-category.html" class="category-link">
+                    <div class="category">
+                        <img src="/Images/Sushi.png" alt="Sushi Category">
+                        <h3>Sushi</h3>
+                    </div>
+                </a>
+            </div>
         </section>
     </main>    
     <footer>
