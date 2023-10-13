@@ -252,11 +252,11 @@ h2 {
 
 h3 {
   margin: 10px 0;
-  color: #333;
+  color: black;
 }
 
 p {
-  color: #777;
+  color: grey;
 }
 
 .restaurant-link,
@@ -289,7 +289,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #ff7043;
+  background-color: red;
   color: #fff;
 }
 

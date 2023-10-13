@@ -1,6 +1,14 @@
+@font-face {
+    font-family: TT Norms Pro;
+    src: url(../Fonts/TT\ Norms\ Pro\ Black.otf);
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: linear-gradient(120deg, #f3f4f6, #e5e6e9);
+    font-family: 'TT Norms Pro';
+    background-image: url('/Images/SigninBackground.png'); /* Path to my background image */
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust the sizing as needed */
+    background-position: center center;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -12,22 +20,25 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    position: relative;
+    text-align: center;
     gap: 20px;
 }
 
-#signup, #login {
+#login {
     box-sizing: border-box;
-    width: 320px;
+    width: 500px;
     padding: 20px;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px; /* Increase the border-radius for rounded corners */
     background-color: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     border-right: 20px solid #ffffff;
+    margin: 0 auto; /* Center the login form horizontally */
 }
 
-#signup:hover, #login:hover {
+#login:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
@@ -47,7 +58,7 @@ body {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 10px; /* Increase the border-radius for rounded input fields */
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -57,14 +68,17 @@ body {
     outline: none;
 }
 
+.button-container {
+    text-align: center; /* Center the button text horizontally */
+}
+
 button {
-    display: block;
-    width: 100%;
-    padding: 12px 15px;
+    display: inline-block; /* Change to inline-block */
+    padding: 12px 20px; /* Adjust padding as needed */
     background-color: #007BFF;
     border: none;
     color: #ffffff;
-    border-radius: 7px;
+    border-radius: 10px; /* Increase the border-radius for rounded button */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -73,4 +87,35 @@ button {
 button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
+}
+
+.social-buttons {
+    background-color: #f0f0f0;
+    border-radius: 20px; /* Increase the border-radius for rounded social buttons container */
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    text-align: center; /* Center the social buttons text */
+}
+
+.google-button {
+    background-color: #DB4437;
+}
+
+.facebook-button {
+    background-color: #1877F2;
+}
+
+.apple-button {
+    background-color: #000000;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px; /* Increase the border-radius for rounded social buttons */
 }
