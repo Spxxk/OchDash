@@ -8,10 +8,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: #fff;
   color: white;
-  flex-wrap: nowrap;
 }
 
 #menu-toggle {
@@ -51,11 +50,10 @@ label[for="menu-toggle"] span {
 #side-menu {
   position: fixed;
   top: 0;
-  left: -300px;
+  left: -1000px;
   height: 100vh;
   width: 250px;
   background-color: #fff;
-  overflow-y: auto;
   transition: left 0.3s;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
 }
@@ -95,15 +93,12 @@ label[for="menu-toggle"] span {
 }
 
 #logo img, #notifications img, #cart img {
-  height: 40px;
-  cursor: pointer;
+  height: 30px;
 }
 
 #delivery-option select, #address-selection input, #search input {
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 5px;
 }
 
 .hidden {
@@ -111,15 +106,17 @@ label[for="menu-toggle"] span {
 }
 
 #search input, #address-input {
-  flex-grow: 1;
-  min-width: 100px;
-  max-width: 300px;
+    flex-grow: 1;
+    min-width: 100px;
+    max-width: calc(300px + 10vw);
+    width: 100%;
 }
 
 #address-section {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  flex-direction: row;
+  align-items: stretch;  
   margin: 20px 0;
   gap: 10px;              
 }
@@ -129,19 +126,6 @@ label[for="menu-toggle"] span {
   width: 300px;
   border-radius: 5px 0 0 5px;
   border: 1px solid #ccc;
-}
-
-#address-btn {
-  padding: 10px 20px;
-  border-radius: 0 5px 5px 0;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  background-color: #ff0000;
-  color: #fff;
-}
-
-#address-btn:hover {
-  background-color: #e60000;
 }
 
 #logo img {
@@ -193,6 +177,10 @@ body {
   padding: 10px 15px;
   border-radius: 50%;
   transition: background 0.3s;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-btn:hover {
@@ -200,7 +188,7 @@ body {
 }
 
 .carousel-container {
-  overflow: hidden;
+  overflow: horizontal;
   flex: 1;
   margin: 0 10px;
 }
@@ -219,27 +207,30 @@ body {
   border-radius: 10px;
 }
 
+
 main {
   padding: 20px;
 }
 
 h2 {
   font-size: 24px;
-  color: #555;
+  color: black;
 }
 
 .featured-restaurants,
 .categories {
   display: flex;
-  gap: 20px; 
+  gap: 15px;  /* Reduced gap for less white space */
   padding: 0 20px;
-  overflow-x: auto;
 }
 
 .restaurant,
 .category {
   flex: 1;
   text-align: center;
+  margin: 0;  /* Ensure no additional margin */
+  padding: 10px;  /* Consistent padding */
+  min-width: 415px;
 }
 
 .restaurant img,
@@ -251,34 +242,32 @@ h2 {
 }
 
 h3 {
-  margin: 10px 0;
+  margin: 5px 0;
   color: black;
 }
 
 p {
-  color: grey;
+  font-size: 14px;
+  color: black;
 }
 
 .restaurant-link,
 .category-link {
-    text-decoration: none;
-    color: inherit;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s;
 }
 
 .restaurant-link:hover .restaurant,
 .category-link:hover .category {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .restaurant-link img,
 .category-link img {
-    pointer-events: none;
+  pointer-events: none;
 }
 
-.restaurant-link:hover,
-.category-link:hover {
-}
 
 
 
@@ -286,11 +275,12 @@ p {
 /* Footer */
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   background-color: red;
   color: #fff;
+  size: 100%;
 }
 
 #footer-links ul,
@@ -321,14 +311,23 @@ footer {
 }
 
 h4 {
+  text-align: center;
+  padding-right: 20px;
   margin-bottom: 15px;
 }
 
 
 
 
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
+  #address-input,
+  #sign,
+  #delivery-option select{
+    display: none;
+  }
+
   #side-menu {
       left: -800px;
       width: 100%;
@@ -339,22 +338,19 @@ h4 {
     justify-content: space-around;
   }
 
-  #search {
-    margin-top: 10px;
-    width: auto;
+  #search input, #address-input{
+    max-width: calc(200px + 10vw);
+    min-width: 80px;
   }
 
   #search input {
-    width: 100%;
+    width: 10%;
+    size: 50%;
   }
 
   #user-auth {
     margin-top: 10px;
     gap: 10px;
-  }
-
-  #search button {
-    width: fit-content;
   }
   
   .featured-restaurants,

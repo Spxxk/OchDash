@@ -3,39 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan's Eats</title>
-    <link rel="stylesheet" href="/CSS/chick-fil-a.css">
+    <title>Header</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <a href="/HTML/frontpage.html" class="back-to-main">← Back to Main Page</a>
-</header>
-
-<main>
-    <section id="restaurant-info">
-        <img src="/Images/Ethan.png" alt="Ethan's Eats">
-        <h2>Ethan's Eats</h2>
-        <p>Exquisite flavors, always fresh</p>
-    </section>
-
-    <section id="menu">
-        <h3>Menu</h3>
-        <ul>
-            <li>
-                <span>Dish A</span>
-                <span>$15.99</span>
-            </li>
-            <li>
-                <span>Dish B</span>
-                <span>$10.49</span>
-            </li>
-        </ul>
-    </section>
-</main>
-
-<footer>
-</footer>
-
+    <header class="header">
+        <button class="menu-button">☰</button>
+        <div class="logo">DOORDASH</div>
+        <div class="address">264 Dunforest Ave</div>
+        <button class="notification-button">🔔</button>
+        <button class="cart-button">🛒</button>
+    </header>
+    <div class="container">
+        <!-- Left Side Content -->
+        <div class="left-side">
+            <h1>Chick-fil-A®</h1>
+            <div class="store-info">
+                <p>🚗 DashPass</p>
+                <p>4.5 • 530+ ratings • 4.1 mi</p>
+                <p>$ • Fast Food, Sandwiches</p>
+                <p>Service fees apply</p>
+                <button>See More</button>
+            </div>
+            <!-- Menu Categories -->
+            <div class="menu">
+                <button>All Day</button>
+                <button>Order It Again</button>
+                <!-- Add other menu categories here -->
+            </div>
+        </div>
+        
+        <!-- Right Side Content -->
+        <div class="right-side">
+            <!-- Search Bar -->
+            <input type="text" placeholder="Search Chick-fil-A®">
+            
+            <!-- Delivery Info -->
+            <div class="delivery-info">
+                <p>🚚 CA$0.00 delivery fee on CA$15+</p>
+                <p>Delivers by 12:00 PM</p>
+            </div>
+            
+            <!-- Featured Items -->
+            <div class="featured-items">
+                <!-- Individual Item -->
+                <div class="item">
+                    <img src="link_to_image.jpg" alt="Chick-fil-A Sandwich">
+                    <p>Chick-fil-A® Spicy Chicken Sandwich</p>
+                    <p>CA$16.73</p>
+                    <button>Add</button>
+                </div>
+                <!-- Repeat similar blocks for other items -->
+            </div>
+            
+            <!-- Reviews Section -->
+            <div class="reviews">
+                <div class="review">
+                    <p>Bria A</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Excellent quality, followed instructions, delicious sauces!</p>
+                </div>
+                <!-- Repeat similar blocks for other reviews -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>

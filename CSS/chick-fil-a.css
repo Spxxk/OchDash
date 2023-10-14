@@ -1,9 +1,7 @@
-#restaurant-info img {
-    border: 5px solid #f8c291;
-}
+@font-face {
+    font-family: TT Norms Pro;
+    src: url(../Fonts/TT\ Norms\ Pro\ Black.otf);
+  }
 
-#menu li {
-    background-color: #f8c291;
-    border-radius: 5px;
-    margin-bottom: 10px; 
-}
+
+
