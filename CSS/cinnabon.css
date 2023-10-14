@@ -145,4 +145,19 @@ button:hover {
     margin: 5px 0;
 }
 
+@media (max-width: 767px) {
+    .featured-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        flex-basis: 80%;
+        margin-bottom: 20px;
+    }
+
+    .item p:nth-of-type(1) {
+        display: none;
+    }
+}
 
