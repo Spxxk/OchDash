@@ -3,39 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zephyr's Dogs</title>
-    <link rel="stylesheet" href="/CSS/jollibee.css">
+    <title>Header</title>
+    <link rel="stylesheet" href="/CSS/cinnabon.css">
 </head>
 <body>
-
-<header>
-    <a href="/HTML/frontpage.html" class="back-to-main">← Back to Main Page</a>
-</header>
-
-<main>
-    <section id="restaurant-info">
-        <img src="/Images/Zephyr.png" alt="Zephyr's Dogs">
-        <h2>Zephyr's Dogs</h2>
-        <p>Long and meaty like the dog himself</p>
-    </section>
-
-    <section id="menu">
-        <h3>Menu</h3>
-        <ul>
-            <li>
-                <span>Dog A</span>
-                <span>$5.99</span>
-            </li>
-            <li>
-                <span>Dog B</span>
-                <span>$4.49</span>
-            </li>
-        </ul>
-    </section>
-</main>
-
-<footer>
-</footer>
-
+    <header class="header">
+        <button class="menu-button">☰</button>
+        <a href="frontpage.html" class="logo">OCHDASH</a>
+        <div class="address">Your Address</div>
+        <button class="notification-button">🔔</button>
+        <button class="cart-button">🛒</button>
+    </header>
+    <div class="container">
+        <!-- Left Side Content -->
+        <div class="left-side">
+            <h1>Jollibee®</h1>
+            <div class="store-info">
+                <p>🚗 OchPass</p>
+                <p>4.7 • 5,300+ ratings • 1.6 mi</p>
+                <p>$ • Fast Food, Sandwiches</p>
+                <p>Service fees apply</p>
+                <button>See More</button>
+            </div>
+        </div>
+        
+        <!-- Right Side Content -->
+        <div class="right-side">
+            <!-- Search Bar -->
+            <input type="text" placeholder="Search Jollibee®">
+            
+            <!-- Delivery Info -->
+            <div class="delivery-info">
+                <p>🚚 CA$0.00 delivery fee on CA$15+</p>
+                <p>Delivers in 20m</p>
+            </div>
+            
+            <!-- Featured Items -->
+            <div class="featured-items">
+                <!-- Individual Item -->
+                <div class="item">
+                    <img src="/Images/J6P.png" alt="Jollibee® 6 Pc Jolly Crispy Chicken Bucket">
+                    <p>Jollibee® 6 Pc Jolly Crispy Chicken Bucket</p>
+                    <p>CA$24.39</p>
+                    <button>Add</button>
+                </div>
+                <div class="item">
+                    <img src="/Images/J10P.png" alt="Jollibee® 3 Pc Jolly Crispy Chicken w/1 Side">
+                    <p>Jollibee® 3 Pc Jolly Crispy Chicken w/1 Side</p>
+                    <p>CA$17.07</p>
+                    <button>Add</button>
+                </div>
+                <div class="item">
+                    <img src="/Images/JPQ.png" alt="Pineapple Quencher">
+                    <p>Jollibee® Pineapple Quencher</p>
+                    <p>CA$4.87</p>
+                    <button>Add</button>
+                </div>
+            </div>
+            
+            <!-- Reviews Section -->
+            <div class="reviews">
+                <div class="review">
+                    <p>Cameron A</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Excellent quality, followed instructions, delicious sauces!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
